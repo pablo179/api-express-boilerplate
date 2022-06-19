@@ -40,8 +40,8 @@
     "scripts": {
         "start": "node src/index.js",
         "dev": "nodemon src/index.js",
-        "test": "jest -i --colors --verbose --detectOpenHandles",
-        "test:watch": "jest -i --watchAll",
+        "test": "npx jest -i --colors --verbose --detectOpenHandles",
+        "test:watch": "npx jest -i --watchAll",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "prettier": "prettier --write ."

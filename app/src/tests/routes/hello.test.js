@@ -1,8 +1,6 @@
-const request = require('supertest')
 const status = require('http-status')
-const supertest = require('supertest')
+const request = require('supertest')
 const app = require('../../app')
-const config = require('../../config')
 
 describe('Hello routes', () => {
     describe('GET /', () => {

@@ -33,7 +33,7 @@ yarn
 
 - [Features](#features)
 - [Commands](#commands)
-- [Environment Variables](#EnvironmentVariables)
+- [Environment Variables](#environment)
 
 ## Features
 - **Testing**: unit and integration tests using [Jest](https://jestjs.io)
@@ -100,6 +100,10 @@ app\
     |--middlewares\    # Custom express middlewares
     |--routes\         # Routes
     |--services\       # Functions and services for routes
+    |--tests\          # Tests folder
+      |--middlewares   
+      |--routes
+      |--services
     |--utils\          # Utility classes and functions
     |--app.js          # Express app
     |--index.js        # App entry point
