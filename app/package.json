@@ -10,10 +10,13 @@
     "dependencies": {
         "dotenv": "^16.0.1",
         "express": "^4.18.1",
-        "http-status": "^1.5.2"
+        "http-status": "^1.5.2",
+        "swagger-jsdoc": "^6.2.1",
+        "swagger-ui-express": "^4.4.0"
     },
     "description": "This is a bolierplate to create a new express app",
     "devDependencies": {
+        "apidoc": "^0.51.1",
         "eslint": "^8.17.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-prettier": "^8.5.0",
@@ -44,7 +47,8 @@
         "test:watch": "npx jest -i --watchAll",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "prettier": "prettier --write ."
+        "prettier": "prettier --write .",
+        "doc": "npx apidoc -i src/ -o src/docs/"
     },
     "version": "1.0.0"
 }

@@ -3,7 +3,6 @@ const helloService = require('../services/hello.service')
 const authMiddleware = require('../middlewares/auth')
 
 const router = express.Router()
-
 router.get('/', (_req, _res) => {
     _res.send({ message: 'hello world' })
 })

@@ -13,10 +13,11 @@ app.use(express.json())
 // parse urlencoded request body
 app.use(express.urlencoded({ extended: true }))
 // add routes
+
 app.use('/', routes)
 
 // send back a 404 error for any unknown api request
-app.use((req, res, next) => {
+app.use((_req, _res, next) => {
     next(new ApiError(status.NOT_FOUND, 'Not found'))
 })
 
