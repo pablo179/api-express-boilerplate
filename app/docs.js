@@ -30,15 +30,6 @@
  *   post:
  *     summary: Retrievethe body sended
  *     tags: [Hello]
-*      requestBody:
-*        required: false
-         content:
-           application/json:
-             schema:
-               type: Object
-               properties:
-                 message:
-                   example: my body
  *     responses:
  *       200:
  *         description: message received returned
